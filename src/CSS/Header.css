@@ -1,0 +1,17 @@
+
+.header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    background: white;
+    top: 0;
+    z-index: 100;
+    color: black;
+    box-shadow: 1px 1px 1px 3px #E6E6E6;
+}
+
+.header > h2{
+    margin-left: 20px;
+    cursor: default;
+}

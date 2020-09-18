@@ -1,0 +1,73 @@
+
+.login__container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.login__container > h3{
+    font-weight: 500;
+    margin-bottom: 22px
+}
+
+.login__container > form > h6{
+    margin-bottom: 5px;
+}
+
+.login__container > form > input{
+    height: 30px;
+    width: 98%;
+    margin-bottom: 2px;
+    padding: 16px;
+}
+
+.login__container > form > textarea{
+    width: 98%;
+    margin-bottom: 0px;
+    padding: 5px 16px;
+}
+
+.login__container > form > select{
+    width: 98%;
+    height: 36px;
+    padding-left: 12px;
+}
+
+.submit__button{
+    margin-left: 40% !important;
+}
+
+.submitBtn_div{
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+}
+
+.login__container p {
+    color: red;
+    font-size: 14px; 
+    opacity: 0;
+    margin-bottom: 0.2rem;
+}
+
+.login__container .makeStyles-formControl-3{
+    margin: 0 !important;
+}
+
+.modal__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.modal__header > .MuiButtonBase-root{
+    padding: 2px !important;
+    height: 25px !important;
+    border-radius: 0 !important;
+}
+
+.makeStyles-paper-2{
+    padding: 15px 20px 24px 20px !important;
+}

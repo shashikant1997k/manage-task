@@ -1,0 +1,71 @@
+.table__header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    cursor: default;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid lightblue;
+}
+
+.table__header button{
+    margin-right: 20px;
+}
+
+.table__header button:focus{
+    outline: none;
+}
+
+.table__headerBtn:focus{
+    outline: none;
+    background: #00BDDC;
+    color: white;
+}
+
+.table__headerBtn:hover{
+    outline: none;
+    background: #00BDDC !important;
+    color: white !important;
+}
+
+.TableView{
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.table__content{
+    padding: 0px 20px;
+}
+
+.table__content .table{
+    margin-bottom: 0px !important;
+}
+
+.table__content .table > thead{
+    background-color: #00BDDC;
+    color: white;
+}
+
+.active{
+    background: aqua;
+}
+
+.table__content .table th{
+    text-align: center;
+    padding: 0.35rem;
+}
+
+.table__content .table td{
+    text-align: center;
+    padding: 0 !important;
+    vertical-align: baseline !important;
+}
+
+.delete_btn{
+    color: #f50057;
+}
+.edit_btn{
+    color: #434343;
+}
