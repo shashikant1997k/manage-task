@@ -9,25 +9,28 @@ import { useStateValue } from '../StateProvider';
 const useStyles = makeStyles((theme) => ({
     paper: {
         position: 'absolute',
-        width: 600,
+        [theme.breakpoints.up('xs') && theme.breakpoints.down('sm')]:{
+            width: 335,
+            left: `50%`,
+            top: `40%`,
+            transform: `translate(-50%, -50%)`,
+            padding: theme.spacing(2, 2, 3),
+        },
+        [theme.breakpoints.up('sm')]:{
+            width: 600,
+            left: `50%`,
+            top: `50%`,
+            transform: `translate(-50%, -50%)`,
+            padding: theme.spacing(2, 4, 3),
+        },
         backgroundColor: theme.palette.background.paper,
         boxShadow: theme.shadows[5],
-        padding: theme.spacing(2, 4, 3),
       },
       
   }));
 
-  function getModalStyle() {
-   
-    return {
-      top: `50%`,
-      left: `50%`,
-      transform: `translate(-50%, -50%)`,
-    };
-  }
 
 function ModalView({status, ModalClose, editData}) {
-    const [modalStyle] = React.useState(getModalStyle);
     const classes = useStyles();
     const [{ tasks }, dispatch] = useStateValue();
     const [data, setData] = useState({
@@ -97,7 +100,7 @@ function ModalView({status, ModalClose, editData}) {
                 aria-labelledby="simple-modal-title"
                 aria-describedby="simple-modal-description"
             >
-                <div style={modalStyle} className={classes.paper}>
+                <div className={classes.paper}>
                     <div className="login__container">
                         <div className="modal__header">
                             <h3>{ (Object.values(editData).length > 0) ? 'Update Task' : 'Add Task' }</h3>

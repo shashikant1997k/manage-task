@@ -3,13 +3,29 @@
     align-items: center;
     background-color: white;
     cursor: default;
-    margin-left: 20px;
-    margin-right: 20px;
     border: 1px solid lightblue;
 }
 
-.table__header button{
-    margin-right: 20px;
+
+@media only screen and (max-width: 600px) {
+    .table__header button{
+        margin-right: 5px;
+        font-size: small;
+    }
+    .table__content{
+        font-size: small;
+    }
+    .action__btn > .MuiIconButton-root{
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .table__header button{
+        margin-right: 20px;
+        font-size: small;
+    }
+    
 }
 
 .table__header button:focus{
@@ -35,9 +51,7 @@
     margin-top: 40px;
 }
 
-.table__content{
-    padding: 0px 20px;
-}
+
 
 .table__content .table{
     margin-bottom: 0px !important;

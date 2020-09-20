@@ -4,7 +4,7 @@ import { Button, makeStyles } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Fab from '@material-ui/core/Fab';
+// import Fab from '@material-ui/core/Fab';
 import EditIcon from '@material-ui/icons/Edit';
 import '../CSS/TableView.css';
 import { useStateValue } from '../StateProvider';
@@ -126,7 +126,7 @@ function TableView({ModalOpen}) {
                                     <td> { item?.title } </td>
                                     <td> { item?.description } </td>
                                     <td> { parseInt(item?.status) ? <p>Completed</p> : <p>Active</p> } </td>
-                                    <td>
+                                    <td className="action__btn">
 
                                         {/* <Fab size="small" onClick={() => deleteTask(item.id)} color="secondary" aria-label="delete" className={classes.margin}>
                                             <DeleteIcon />
